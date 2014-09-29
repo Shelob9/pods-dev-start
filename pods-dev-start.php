@@ -56,8 +56,8 @@ add_action( 'plugins_loaded', function() {
 		$classLoader->addDirectory( PODS_DEV_DIR . 'PodsDev' );
 		$classLoader->register();
 
-		//$api_registration = new \PodsDev\hookManager\Registration();
-		//$api_registration->boot();
+		$api_registration = new \PodsDev\hookManager\Registration();
+		$api_registration->boot();
 
 	}
 
